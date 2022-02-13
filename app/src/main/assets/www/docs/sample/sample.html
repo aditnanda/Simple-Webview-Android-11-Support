@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="theme-color" content="#001935">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+    <title>Sample Page</title>
+
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORwOKGgo=">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORwOKGgo=">
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORwOKGgo=">
+
+    <link rel="stylesheet" href="./sample.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script async src="../../common/js/nativeBridge.js"></script>
+    <script async src="../../common/js/progress.js"></script>
+    <script async src="./sample.js"></script>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+</head>
+<body class="identity word-break">
+<div class="wrap">
+
+    <div class="l-header-container">
+        <div class="l-header">
+            <h1 class="">Welcome</h1>
+        </div>
+    </div>
+
+    <div class="l-content-container">
+        <div class="l-content">
+            <h2 class="">Image</h2>
+            <div class="center mT50">
+                <div class="center">
+                    android_res/<br>
+                    <img src="/res/drawable/icon_no_image.png"><br>
+                    http://<br>
+                    <img src="http://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"><br>
+                    https://<br>
+                    <img src="https://www.w3schools.com/images/colorpicker.png" alt="Flowers" style="width:auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-content-container">
+        <div class="l-content">
+            <h2 class="">Content</h2>
+            <div class="center mT50">
+                <div class="center">
+                    <input type="button" id="call-android-methods-recommended-1" class="btn" value="Recommended: Call Android methods 1"><br><br>
+                    <input type="button" id="call-android-methods-recommended-2" class="btn" value="Recommended: Call Android methods 2"><br><br>
+                </div>
+
+                <div class="center mT40">
+                    <input type="button" id="native-take-a-picture" class="btn" value="take a picture">
+                </div>
+                
+                <div class="center mT40">
+                    <a id="google-maps" class="btn" href="http://www.google.com/maps">Google Maps</a>
+                </div>
+                
+                <div class="center mT40">
+                    <label for="file-chooser-image">accept="image/*"</label><br><input type="file" id="file-chooser-image" class="btn mT5" accept="image/*" /><br>
+                    <label for="file-chooser-audio">accept="audio/*"</label><br><input type="file" id="file-chooser-audio" class="btn mT5" accept="audio/*" /><br>
+                    <label for="file-chooser-video">accept="video/*"</label><br><input type="file" id="file-chooser-video" class="btn mT5" accept="video/*" /><br>
+                    <label for="file-chooser-any">accept="*/*"</label><br><input type="file" id="file-chooser-any" class="btn mT5" accept="*/*" /><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-content-container">
+        <div class="l-content">
+            <h2 class="">Video</h2>
+            <div class="center mT50">
+                <video id="video" height="100%" controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-content-container">
+        <div class="l-content">
+            <h2 class="">Permission</h2>
+            <div class="center mT50">
+                <input type="button" id="req-microphone" class="btn" value="Microphone Permission"/>
+                <br><br>
+                <input type="button" id="req-camera" class="btn" value="Camera Permission"/>
+            </div>
+            <div class="center mT50">
+                <video id="media-device-video" style="width: 80%" autoplay>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="center mT50">
+                <img id="captured-img" src="" style="width: 80%; background: #fff;">
+                <canvas id="canvas" style="display:none;"></canvas>
+            </div>
+            <div class="center mT50">
+                <button id="btn-capture" class="btn">Capture</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-footer-container">
+        <div class="l-footer">
+            <p>Copyright (c) 2018 Aaron Jo. All right reserved.</p>
+            <p class="mTop20"><a href="mailto:mcharima5@gmail.com">mcharima5@gmail.com</a></p>
+            <p class="mTop20"><a href="intent://start/#Intent;scheme=sncapp;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=cloud.nand.test.webview2;end"> Install WebViewTest Application </a><br></p>
+            <p class="mTop20"><a href="https://sncproject.page.link/tobR"> Install WebViewTest Application </a><br></p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
